@@ -6,27 +6,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class SigninPage extends BasePage{
-    String pageURL = "https://idemo.bspb.ru/";
-    By usernameInput = By.name("username");
-    By passwordInput = By.name("password");
-    By signInButton =  By.id("login-button");
+    static String pageURL = "https://idemo.bspb.ru/";
+    static By usernameInput = By.name("username");
+    static By passwordInput = By.name("password");
+    static By signInButton =  By.id("login-button");
 
-    public void insertLogin(String login) {
+    public static void insertLogin(String login) {
         lookForElement(usernameInput).sendKeys(login);
 
     }
 
-    public void insertPassword(String password) {
+    public static void insertPassword(String password) {
         lookForElement(passwordInput).sendKeys(password);
 
     }
 
-    public void clickLoginButton() {
+    public static void clickLoginButton() {
         lookForElement(signInButton).click();
 
     }
-    @Override
-    public void open() {
+
+    public static void open() {
         driver.get(pageURL);
 
     }

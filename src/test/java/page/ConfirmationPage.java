@@ -12,8 +12,8 @@ public class ConfirmationPage extends BasePage{
     public boolean isDisplayed(){
         return lookForElement(confirmationWindow).isDisplayed();
     }
-    @Override
-    public void open() {
-        driver.get(pageURL);
-    }
+//  @Override
+//    public void open() {
+//        driver.get(pageURL);
+//    }
 }
