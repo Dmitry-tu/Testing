@@ -1,0 +1,4 @@
+  WebElement usernameInput = driver.findElement(By.name("username"));
+        WebElement passwordInput = driver.findElement(By.name("password"));
+        WebElement signInButton = driver.findElement( By.id("login-button"));
+        WebElement confirmationWindow = driver.findElement(By.xpath("//*[@id=\"login-form\"]/div[2]/div"));
