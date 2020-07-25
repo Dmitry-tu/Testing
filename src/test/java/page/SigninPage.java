@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public class SigninPage {
     WebDriver driver = DriverSingleton.getDriver();
-
     String pageURL = "https://idemo.bspb.ru/";
     By usernameInput = By.name("username");
     By passwordInput = By.name("password");
@@ -17,18 +16,21 @@ public class SigninPage {
         return driver.findElement(by);
     }
 
-    public void insertLogin(String login) {
+    public SigninPage insertLogin(String login) {
         lookForElement(usernameInput).sendKeys(login);
+        return this;
 
     }
 
-    public void insertPassword(String password) {
+    public SigninPage insertPassword(String password) {
         lookForElement(passwordInput).sendKeys(password);
+        return this;
 
     }
 
-    public void clickLoginButton() {
+    public ConfirmationPage clickLoginButton() {
         lookForElement(signInButton).click();
+        return new ConfirmationPage();
 
     }
 

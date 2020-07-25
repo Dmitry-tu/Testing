@@ -14,27 +14,26 @@ import static org.testng.Assert.assertTrue;
 
 public class LoginTest {
     SigninPage signinPage;
-    ConfirmationPage confirmationPage;
+    ConfirmationPage confirmationPage ;
 
     @BeforeMethod
     public void setup() {
-       signinPage = new SigninPage();
-       confirmationPage = new ConfirmationPage();
-       signinPage.open();
+        signinPage = new SigninPage();
+        signinPage.open();
 
     }
 
     @Test
     public void successfulLoginTest() {
-
-       signinPage.insertLogin("demo");
-       signinPage.insertPassword("demo");
-       signinPage.clickLoginButton();
+        confirmationPage = signinPage.insertLogin("demo")
+                                     .insertPassword("demo")
+                                     .clickLoginButton();
 
         assertTrue(confirmationPage.isDisplayed());
 
 
     }
+
     @AfterMethod
     public void tearDown() {
         signinPage = null;
