@@ -19,6 +19,7 @@ public class LoginTest {
     @BeforeMethod
     public void setup() {
        signinPage = new SigninPage();
+       confirmationPage = new ConfirmationPage();
        signinPage.open();
 
     }
@@ -37,5 +38,6 @@ public class LoginTest {
     @AfterMethod
     public void tearDown() {
         signinPage = null;
+        confirmationPage = null;
     }
 }
