@@ -3,12 +3,12 @@ package TEsts;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page.ConfirmationPage;
-import page.SigninPage;
+import page.confirmationpage.ConfirmationPage;
+import page.signinpage.SigninPage;
 
 import static org.testng.Assert.assertTrue;
 
-public class LoginTest {
+public class LoginTest extends BaseTest {
     SigninPage signinPage;
     ConfirmationPage confirmationPage;
 
@@ -33,6 +33,7 @@ public class LoginTest {
     }
     @AfterMethod
     public void tearDown() {
+        super.tearDown();
         signinPage = null;
         confirmationPage = null;
     }
