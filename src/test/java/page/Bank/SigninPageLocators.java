@@ -1,4 +1,4 @@
-package page.signinpage;
+package page.Bank;
 
 import org.openqa.selenium.By;
 

@@ -1,9 +1,8 @@
-package page.confirmationpage;
+package page.Bank;
 
-import org.openqa.selenium.By;
 import page.BasePage;
 
-import static page.confirmationpage.ConfirmationPageLocators.CONFIRMATION_WINDOW;
+import static page.Bank.ConfirmationPageLocators.CONFIRMATION_WINDOW;
 
 public class ConfirmationPage extends BasePage {
     String pageURL = "https://idemo.bspb.ru/auth/otp?authOptionId=SMS%3A10005";
