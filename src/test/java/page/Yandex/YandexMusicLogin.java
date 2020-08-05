@@ -7,7 +7,7 @@ import static page.Yandex.YandexMusicLocator.userNameBox;
 
 public class YandexMusicLogin extends BasePage {
     public void UserNameClickEnter(String text) {
-        WindowCloser();
+        windowHandle(1);
         SendKeysEnter(userNameBox, text);
 
     }

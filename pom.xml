@@ -55,6 +55,12 @@
             <artifactId>allure-testng</artifactId>
             <version>${allure-testng.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>4.0.0-alpha-5</version>
+            <scope>test</scope>
+        </dependency>
 
         <!--        <dependency>-->
         <!--            <groupId>io.github.bonigarcia</groupId>-->
