@@ -1,6 +1,6 @@
 # Automation testing
 
-Program need for testing authorisation on WEB sites [link bspb](https://idemo.bspb.ru) and [link yandex music](https://music.yandex.ru/home)
+Application used for testing authorisation on WEB sites [link bspb](https://idemo.bspb.ru) and [link yandex music](https://music.yandex.ru/home)
 ## What we used:
  
 - selenium-java  _**v.4.0.0-alpha-5**_
